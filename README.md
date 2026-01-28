@@ -159,6 +159,10 @@ Run the test suite:
 make test
 ```
 
+## Coding Conventions
+
+- functions begin with underscores and use snake_case (e.g. `_handle_request`)
+- comments are lowercase and minimal
 
 ## Dependencies
 
