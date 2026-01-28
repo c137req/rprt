@@ -16,7 +16,7 @@ A Go-based reverse proxy system that tunnels HTTP traffic through WebSocket conn
 
 ```
 +----------+     HTTPS      +---------+    WebSocket    +---------+     HTTP      +-----------+
-|  Client  | ------------->	|  Relay  | <-------------> |  Agent  | ------------>	|  Backend  |
+|  Client  | ------------->	|  Relay  | <-------------> |  Agent  | ---------->	|  Backend  |
 +----------+                +---------+                 +---------+               +-----------+
                                  |                            |
                                  |                            | (optional)
