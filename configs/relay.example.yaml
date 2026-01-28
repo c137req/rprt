@@ -1,0 +1,15 @@
+listen:
+  addr: ":443"
+
+tls:
+  enabled: true
+  cert_file: "/etc/letsencrypt/live/example.com/fullchain.pem"
+  key_file: "/etc/letsencrypt/live/example.com/privkey.pem"
+
+auth:
+  shared_secret: "change-me"
+
+tunnel:
+  path: "/_tunnel/ws"
+  ping_interval: 15s
+  request_timeout: 60s
