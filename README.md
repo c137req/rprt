@@ -1,4 +1,4 @@
-# Reverse Proxy
+# RPRT (Reverse-Proxy Relay Tunnel)
 
 A Go-based reverse proxy system that tunnels HTTP traffic through WebSocket connections with optional proxy routing support.
 
