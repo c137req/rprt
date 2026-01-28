@@ -1,0 +1,19 @@
+relay:
+  url: "wss://relay.example.com/_tunnel/ws"
+
+proxy:
+  url: "socks5://user:pass@residential-proxy.example.com:1080"
+  verify_routing: true
+  health_timeout: 10s
+  recheck_interval: 5m
+
+backend:
+  target_url: "http://127.0.0.1:8080"
+
+auth:
+  shared_secret: "change-me"
+
+tunnel:
+  reconnect_delay: 2s
+  max_reconnect_delay: 60s
+  ping_interval: 15s
