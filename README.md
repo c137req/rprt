@@ -3,25 +3,43 @@
 A Go-based reverse proxy system that tunnels HTTP traffic through WebSocket connections with optional proxy routing support.
 
 ## Todos
-[ ] add support for multiple agents/tunnels per relay (with unique IDs or sub-paths)
-[ ] implement end-to-end encryption inside the WebSocket tunnel (e.g. noise protocol or simple AES with per-session keys)
-[ ] replace plain shared_secret with proper per-tunnel asymmetric keys or JWT-style tokens
-[ ] add basic rate limiting / connection limiting on relay to prevent abuse
-[ ] support HTTP/2 or HTTP/3 on the relay listener
-[ ] add logging (structured JSON + file output) with configurable levels
-[ ] implement graceful shutdown / signal handling for both relay and agent
-[ ] write simple end-to-end integration/smoke tests (spin up relay + agent + backend)
-[ ] add Dockerfiles + docker-compose example for quick relay + agent testing
-[ ] document how to generate self-signed certs or use Let's Encrypt for relay TLS
-[ ] add metrics endpoint (Prometheus style) for monitoring tunnel health/connections
-[ ] support custom WebSocket subprotocols or headers for better reverse-proxy compatibility
-[ ] add basic access logging on relay (client IP, request path, status, latency)
-[ ] handle WebSocket close codes properly and log meaningful reconnect reasons
-[ ] add optional basic auth or IP whitelist on relay in addition to HMAC
-[ ] support environment variable substitution in config files
-[ ] create a simple usage/example guide with screenshots or ASCII diagrams
-[ ] add version command (--version) and embed build/commit info
-[ ] publish pre-built binaries via GitHub Releases (linux/amd64, arm64, windows)
+- [ ] add support for multiple agents/tunnels per relay (with unique IDs or sub-paths)
+
+- [ ] implement end-to-end encryption inside the WebSocket tunnel (e.g. noise protocol or simple AES with per-session keys)
+
+- [ ] replace plain shared_secret with proper per-tunnel asymmetric keys or JWT-style tokens
+
+- [ ] add basic rate limiting / connection limiting on relay to prevent abuse
+
+- [ ] support HTTP/2 or HTTP/3 on the relay listener
+
+- [ ] add logging (structured JSON + file output) with configurable levels
+
+- [ ] implement graceful shutdown / signal handling for both relay and agent
+
+- [ ] write simple end-to-end integration/smoke tests (spin up relay + agent + backend)
+
+- [ ] add Dockerfiles + docker-compose example for quick relay + agent testing
+
+- [ ] document how to generate self-signed certs or use Let's Encrypt for relay TLS
+
+- [ ] add metrics endpoint (Prometheus style) for monitoring tunnel health/connections
+
+- [ ] support custom WebSocket subprotocols or headers for better reverse-proxy compatibility
+
+- [ ] add basic access logging on relay (client IP, request path, status, latency)
+
+- [ ] handle WebSocket close codes properly and log meaningful reconnect reasons
+
+- [ ] add optional basic auth or IP whitelist on relay in addition to HMAC
+
+- [ ] support environment variable substitution in config files
+
+- [ ] create a simple usage/example guide with screenshots or ASCII diagrams
+
+- [ ] add version command (--version) and embed build/commit info
+
+- [ ] publish pre-built binaries via GitHub Releases (linux/amd64, arm64, windows)
 
 ## Features
 
