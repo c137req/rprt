@@ -3,27 +3,28 @@
 A Go-based reverse proxy system that tunnels HTTP traffic through WebSocket connections with optional proxy routing support.
 
 ## Why rprt instead of alternatives?
-1. vs VPN
-  VPN gives you:
-    - Full network visibility
-    - Massive blast radius
-    - Customer security red flags
-  rprt gives you:
-    - Only HTTP
-    - Only what you explicitly expose
-    - One-way trust (agent -> you)
 
-2. vs SSH tunnels
-   - SSH doesn’t scale
-   - Key management is painful
-   - No multi-tenant routing
-   - No observability
-   - 
-3. vs Cloudflare Tunnel / ngrok
-   - No third-party dependency
-   - No traffic inspection
-   - Works in air-gapped-ish environments
-   - Predictable cost model
+### VPN gives you:
+- Full network visibility
+- Massive blast radius
+- Customer security red flags
+
+### RPRT gives you:
+- Only HTTP
+- Only what you explicitly expose
+- One-way trust (agent -> you)
+
+### SSH tunnels
+- SSH doesn’t scale
+- Key management is painful
+- No multi-tenant routing
+- No observability
+
+### Cloudflare Tunnel / ngrok
+- No third-party dependency
+- No traffic inspection
+- Works in air-gapped-ish environments
+- Predictable cost model
 
 ## Features
 
