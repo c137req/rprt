@@ -1,4 +1,4 @@
-module github.com/reverseproxy
+module github.com/c137req/rprt
 
 go 1.22
 
